@@ -1,11 +1,11 @@
 Datetime;Status;Step;Obs;Traceback
-01/02/2022 17:48:27;SUCCESS;MAIN FUNCTION;START
-01/02/2022 17:48:27;SUCCESS;OPENING CADMUS WEBSITE;START
-01/02/2022 17:48:32;SUCCESS;OPENING CADMUS WEBSITE;END
-01/02/2022 17:48:32;SUCCESS;GET ALL OPORTUNITIES;START
-01/02/2022 17:48:35;SUCCESS;GET ALL OPORTUNITIES;END
-01/02/2022 17:48:35;SUCCESS;EXPORT TO EXCEL FILE;START
-01/02/2022 17:48:36;SUCCESS;EXPORT TO EXCEL FILE;END
-01/02/2022 17:48:36;SUCCESS;SENDING EMAIL;START
-01/02/2022 17:48:36;EXCEPTION;SENDING EMAIL;STEP FAILED;Traceback (most recent call last): /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\RPA\Libs\Logs.py", line 60, in wrapper /n     value = func(*args, **kwargs) /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\main.py", line 60, in SEND_EMAIL /n     smtp_o.sendmail(TO, Body, SUBJECT, "html","", [file]) /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\RPA\Libs\SendEmail.py", line 35, in sendmail /n     sm.starttls() /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 753, in starttls /n     self.ehlo_or_helo_if_needed() /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 604, in ehlo_or_helo_if_needed /n     if not (200 <= self.ehlo()[0] <= 299): /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 444, in ehlo /n     self.putcmd(self.ehlo_msg, name or self.local_hostname) /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 371, in putcmd /n     self.send(str) /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 363, in send /n     raise SMTPServerDisconnected('please run connect() first') /n smtplib.SMTPServerDisconnected: please run connect() first /n 
-01/02/2022 17:48:36;SUCCESS;MAIN FUNCTION;END
+01/02/2022 18:18:30;SUCCESS;MAIN FUNCTION;START
+01/02/2022 18:18:30;SUCCESS;OPENING CADMUS WEBSITE;START
+01/02/2022 18:18:36;SUCCESS;OPENING CADMUS WEBSITE;END
+01/02/2022 18:18:36;SUCCESS;GET ALL OPORTUNITIES;START
+01/02/2022 18:18:38;SUCCESS;GET ALL OPORTUNITIES;END
+01/02/2022 18:18:38;SUCCESS;EXPORT TO EXCEL FILE;START
+01/02/2022 18:18:39;SUCCESS;EXPORT TO EXCEL FILE;END
+01/02/2022 18:18:39;SUCCESS;SENDING EMAIL;START
+01/02/2022 18:19:23;EXCEPTION;SENDING EMAIL;STEP FAILED;Traceback (most recent call last): /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\RPA\Libs\Logs.py", line 60, in wrapper /n     value = func(*args, **kwargs) /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\main.py", line 60, in SEND_EMAIL /n     smtp_o.sendmail(TO, Body, SUBJECT, "html","", [file]) /n   File "c:\Users\melque\Documents\Git\Cadmus_RPA\RPA\Libs\SendEmail.py", line 56, in sendmail /n     sm.login(self.user, self.password) /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 734, in login /n     raise last_exception /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 723, in login /n     (code, resp) = self.auth( /n   File "c:\users\melque\appdata\local\programs\python\python38\lib\smtplib.py", line 646, in auth /n     raise SMTPAuthenticationError(code, resp) /n smtplib.SMTPAuthenticationError: (534, b'5.7.9 Application-specific password required. Learn more at\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s64sm13317624oos.0 - gsmtp') /n 
+01/02/2022 18:19:23;SUCCESS;MAIN FUNCTION;END

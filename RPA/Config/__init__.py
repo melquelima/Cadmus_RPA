@@ -9,12 +9,12 @@ CURRENT_FOLDER = os.path.dirname(__file__)
 CHROME_DRIVER = CURRENT_FOLDER + '/chromedriver.exe'
 #========SMT CONFIG==========
 FROM    = ''
-SERVER  = ''
-PORT    = ''
-USER    = ''
-PWD     = ''
-TO      = "email_must_recieve@gmail.com"
-SUBJECT = "Relatório de Vagas Disponíveis CadMus"
+SERVER  = 'smtp.gmail.com'
+PORT    = 587
+USER    = 'my_email@gmail.com'
+PWD     = 'my_password'
+TO      = "emailWilreceive@gmail.com"
+SUBJECT = "Report Oportunities CADMUS"
 #=======LOG FILE=============
 LOG_FILE = DEFAULT_FOLDER + '/Logs/log.csv'
 if os.path.exists(LOG_FILE): os.remove(LOG_FILE)
